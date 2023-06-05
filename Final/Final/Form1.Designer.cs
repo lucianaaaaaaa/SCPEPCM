@@ -31,6 +31,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.lbl_bienvenido = new System.Windows.Forms.Label();
             this.btn_ingresar = new System.Windows.Forms.Button();
+            this.btn_salir = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // lbl_bienvenido
@@ -53,13 +54,27 @@
             this.btn_ingresar.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.btn_ingresar.Font = new System.Drawing.Font("Mongolian Baiti", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_ingresar.ForeColor = System.Drawing.Color.Orchid;
-            this.btn_ingresar.Location = new System.Drawing.Point(340, 392);
+            this.btn_ingresar.Location = new System.Drawing.Point(205, 392);
             this.btn_ingresar.Name = "btn_ingresar";
             this.btn_ingresar.Size = new System.Drawing.Size(185, 78);
             this.btn_ingresar.TabIndex = 1;
             this.btn_ingresar.Text = "Ingresar";
             this.btn_ingresar.UseVisualStyleBackColor = false;
             this.btn_ingresar.Click += new System.EventHandler(this.btn_ingresar_Click);
+            // 
+            // btn_salir
+            // 
+            this.btn_salir.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btn_salir.BackColor = System.Drawing.Color.MediumOrchid;
+            this.btn_salir.Font = new System.Drawing.Font("Mongolian Baiti", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_salir.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btn_salir.Location = new System.Drawing.Point(466, 392);
+            this.btn_salir.Name = "btn_salir";
+            this.btn_salir.Size = new System.Drawing.Size(185, 78);
+            this.btn_salir.TabIndex = 2;
+            this.btn_salir.Text = "Salir";
+            this.btn_salir.UseVisualStyleBackColor = false;
+            this.btn_salir.Click += new System.EventHandler(this.btn_salir_Click);
             // 
             // Form1
             // 
@@ -68,6 +83,7 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(873, 532);
+            this.Controls.Add(this.btn_salir);
             this.Controls.Add(this.btn_ingresar);
             this.Controls.Add(this.lbl_bienvenido);
             this.Name = "Form1";
@@ -83,6 +99,7 @@
 
         private System.Windows.Forms.Label lbl_bienvenido;
         private System.Windows.Forms.Button btn_ingresar;
+        private System.Windows.Forms.Button btn_salir;
     }
 }
 

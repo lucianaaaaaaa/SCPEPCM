@@ -33,5 +33,14 @@ namespace Final
             Inicio_Sesion inicio_Sesion = new Inicio_Sesion();
             inicio_Sesion.Show();
         }
+
+        private void btn_salir_Click(object sender, EventArgs e)
+        {
+            DialogResult mensaje = MessageBox.Show("¿Cerrar Pantalla?", "", MessageBoxButtons.OKCancel);
+            if (mensaje == DialogResult.OK)
+            {
+                Application.Exit();
+            }
+        }
     }
 }
