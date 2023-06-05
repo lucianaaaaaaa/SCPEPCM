@@ -19,7 +19,7 @@ namespace Final
 
         private void label1_Click(object sender, EventArgs e)
         {
-
+            
         }
 
         private void btn_generar_comprobante_Click(object sender, EventArgs e)
