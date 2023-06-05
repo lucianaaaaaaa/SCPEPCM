@@ -16,5 +16,12 @@ namespace Final
         {
             InitializeComponent();
         }
+
+        private void btn_registro_compra_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            pantalla_empleado pantalla_Empleado = new pantalla_empleado();
+            pantalla_Empleado.Show();
+        }
     }
 }

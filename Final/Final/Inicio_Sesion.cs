@@ -20,7 +20,7 @@ namespace Final
     //tengoplata123
     public partial class Inicio_Sesion : Form
     {
-
+        //comentario
         IFirebaseConfig config = new FirebaseConfig
         {
             AuthSecret = "ExAWzOGUGQ37zf9X2381ZGbRYxaxrVqlgzPpsAZZ",
@@ -94,7 +94,9 @@ namespace Final
 
         private void pictureBox2_Click(object sender, EventArgs e)
         {
-
+            this.Hide();
+            Form1 form1 = new Form1();
+            form1.Show();
         }
 
         private void Inicio_Sesion_Load(object sender, EventArgs e)

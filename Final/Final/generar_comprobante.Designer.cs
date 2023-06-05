@@ -38,6 +38,7 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
+            this.btn_registro_compra = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -131,11 +132,25 @@
             this.label6.TabIndex = 13;
             this.label6.Text = "Total a Pagar:";
             // 
+            // btn_registro_compra
+            // 
+            this.btn_registro_compra.BackColor = System.Drawing.Color.Thistle;
+            this.btn_registro_compra.Font = new System.Drawing.Font("Mongolian Baiti", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_registro_compra.ForeColor = System.Drawing.Color.White;
+            this.btn_registro_compra.Location = new System.Drawing.Point(294, 481);
+            this.btn_registro_compra.Name = "btn_registro_compra";
+            this.btn_registro_compra.Size = new System.Drawing.Size(283, 39);
+            this.btn_registro_compra.TabIndex = 24;
+            this.btn_registro_compra.Text = "Registrar Nueva Compra";
+            this.btn_registro_compra.UseVisualStyleBackColor = false;
+            this.btn_registro_compra.Click += new System.EventHandler(this.btn_registro_compra_Click);
+            // 
             // generar_comprobante
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(873, 532);
+            this.Controls.Add(this.btn_registro_compra);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
@@ -165,5 +180,6 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Button btn_registro_compra;
     }
 }

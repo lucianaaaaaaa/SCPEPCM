@@ -44,5 +44,17 @@ namespace Final
             ver_inventario ver_Inventario = new ver_inventario();
             ver_Inventario.Show();
         }
+
+        private void btn_salir_Click(object sender, EventArgs e)
+        {
+            DialogResult mensaje = MessageBox.Show("¿Desea cerrar sesion?", "", MessageBoxButtons.OKCancel);
+            if (mensaje == DialogResult.OK)
+            {
+                this.Hide();
+                Inicio_Sesion inicio_Sesion = new Inicio_Sesion();
+                inicio_Sesion.Show();
+
+            }
+        }
     }
 }

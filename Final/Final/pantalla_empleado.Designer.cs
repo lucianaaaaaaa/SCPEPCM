@@ -65,6 +65,7 @@
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 4;
             this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // label1
             // 
@@ -138,9 +139,9 @@
             this.btn_agregar_canasta.BackColor = System.Drawing.Color.Thistle;
             this.btn_agregar_canasta.Font = new System.Drawing.Font("Mongolian Baiti", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_agregar_canasta.ForeColor = System.Drawing.Color.White;
-            this.btn_agregar_canasta.Location = new System.Drawing.Point(605, 339);
+            this.btn_agregar_canasta.Location = new System.Drawing.Point(603, 318);
             this.btn_agregar_canasta.Name = "btn_agregar_canasta";
-            this.btn_agregar_canasta.Size = new System.Drawing.Size(200, 55);
+            this.btn_agregar_canasta.Size = new System.Drawing.Size(217, 70);
             this.btn_agregar_canasta.TabIndex = 22;
             this.btn_agregar_canasta.Text = "Agregar a Canasta";
             this.btn_agregar_canasta.UseVisualStyleBackColor = false;
@@ -150,9 +151,9 @@
             this.btn_generar_comprobante.BackColor = System.Drawing.Color.Thistle;
             this.btn_generar_comprobante.Font = new System.Drawing.Font("Mongolian Baiti", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_generar_comprobante.ForeColor = System.Drawing.Color.White;
-            this.btn_generar_comprobante.Location = new System.Drawing.Point(342, 430);
+            this.btn_generar_comprobante.Location = new System.Drawing.Point(342, 423);
             this.btn_generar_comprobante.Name = "btn_generar_comprobante";
-            this.btn_generar_comprobante.Size = new System.Drawing.Size(160, 90);
+            this.btn_generar_comprobante.Size = new System.Drawing.Size(194, 97);
             this.btn_generar_comprobante.TabIndex = 23;
             this.btn_generar_comprobante.Text = "Generar Comprobante";
             this.btn_generar_comprobante.UseVisualStyleBackColor = false;

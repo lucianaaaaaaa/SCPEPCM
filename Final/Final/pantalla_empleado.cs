@@ -24,7 +24,21 @@ namespace Final
 
         private void btn_generar_comprobante_Click(object sender, EventArgs e)
         {
+            this.Hide();
+            generar_comprobante generar_Comprobante = new generar_comprobante();    
+            generar_Comprobante.Show();
+        }
 
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            DialogResult mensaje = MessageBox.Show("¿Desea cerrar sesion?", "", MessageBoxButtons.OKCancel);
+            if (mensaje == DialogResult.OK)
+            {
+                this.Hide();
+                Inicio_Sesion inicio_Sesion = new Inicio_Sesion();
+                inicio_Sesion.Show();
+
+            }
         }
     }
 }
