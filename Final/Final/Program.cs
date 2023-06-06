@@ -16,7 +16,7 @@ namespace Final
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new datos_agregar_producto());
+            Application.Run(new pantalla_empleado());
         }
     }
 }

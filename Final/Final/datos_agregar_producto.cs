@@ -54,7 +54,7 @@ namespace Final
                     }
                 }
 
-                var datalayerProducto = new Productos
+                    var datalayerProducto = new Productos
                     {
                         Codigo = (reserva.Productos+1000).ToString(),
                         Nombre = txt_nombre_producto.Text,

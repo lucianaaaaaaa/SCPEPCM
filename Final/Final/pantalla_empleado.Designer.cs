@@ -32,8 +32,6 @@
             this.lbl_nombre_producto = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.label3 = new System.Windows.Forms.Label();
             this.cmb_productos = new System.Windows.Forms.ComboBox();
             this.txt_nombre_cliente = new System.Windows.Forms.TextBox();
@@ -77,23 +75,6 @@
             this.label1.TabIndex = 5;
             this.label1.Text = "NIT:";
             this.label1.Click += new System.EventHandler(this.label1_Click);
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Mongolian Baiti", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(204, 243);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(71, 24);
-            this.label2.TabIndex = 6;
-            this.label2.Text = "Fecha:";
-            // 
-            // dateTimePicker1
-            // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(312, 245);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(252, 22);
-            this.dateTimePicker1.TabIndex = 7;
             // 
             // label3
             // 
@@ -145,6 +126,7 @@
             this.btn_agregar_canasta.TabIndex = 22;
             this.btn_agregar_canasta.Text = "Agregar a Canasta";
             this.btn_agregar_canasta.UseVisualStyleBackColor = false;
+            this.btn_agregar_canasta.Click += new System.EventHandler(this.btn_agregar_canasta_Click);
             // 
             // btn_generar_comprobante
             // 
@@ -193,14 +175,13 @@
             this.Controls.Add(this.txt_nombre_cliente);
             this.Controls.Add(this.cmb_productos);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.dateTimePicker1);
-            this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.lbl_nombre_producto);
             this.Name = "pantalla_empleado";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "pantalla_empleado";
+            this.Load += new System.EventHandler(this.pantalla_empleado_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -212,8 +193,6 @@
         private System.Windows.Forms.Label lbl_nombre_producto;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.ComboBox cmb_productos;
         private System.Windows.Forms.TextBox txt_nombre_cliente;

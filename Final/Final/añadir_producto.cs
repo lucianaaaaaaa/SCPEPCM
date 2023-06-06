@@ -1,4 +1,7 @@
-﻿using System;
+﻿using FireSharp.Config;
+using FireSharp.Interfaces;
+using FireSharp.Response;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,6 +15,14 @@ namespace Final
 {
     public partial class añadir_producto : Form
     {
+        List<Productos> lista_productos = new List<Productos>();
+
+        IFirebaseConfig config = new FirebaseConfig
+        {
+            AuthSecret = "ExAWzOGUGQ37zf9X2381ZGbRYxaxrVqlgzPpsAZZ",
+            BasePath = "https://scpepcm-default-rtdb.firebaseio.com/"
+        };
+        IFirebaseClient client;
         public añadir_producto()
         {
             InitializeComponent();
@@ -28,6 +39,29 @@ namespace Final
         {
             datos_agregar_producto datos_producto = new datos_agregar_producto();
             datos_producto.Show();
+        }
+
+        private async void llenar_dgv_productos()
+        {
+            FirebaseResponse responseAlmacén = await client.GetAsync("Reserva/Productos");
+            Almacén reserva = responseAlmacén.ResultAs<Almacén>();
+
+            for (int i = 0; i < reserva.Productos; i++)
+            {
+                FirebaseResponse responseProducto = await client.GetAsync("Productos/" + (1000 + i).ToString());
+                Productos producto = responseProducto.ResultAs<Productos>();
+                if (producto.Reserva >= 0)
+                {
+                    lista_productos.Add(producto);
+                }
+            }
+            dgv_productos.DataSource = lista_productos;
+        }
+
+        private void añadir_producto_Load(object sender, EventArgs e)
+        {
+            client = new FireSharp.FirebaseClient(config);
+            llenar_dgv_productos();
         }
     }
 }

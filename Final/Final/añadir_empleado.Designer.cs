@@ -48,6 +48,7 @@
             this.txt_contraseña = new System.Windows.Forms.TextBox();
             this.txt_confirmar_contraseña = new System.Windows.Forms.TextBox();
             this.btn_registrar = new System.Windows.Forms.Button();
+            this.bttn_atrás = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -218,11 +219,22 @@
             this.btn_registrar.Text = "Registrar";
             this.btn_registrar.UseVisualStyleBackColor = false;
             // 
+            // bttn_atrás
+            // 
+            this.bttn_atrás.Location = new System.Drawing.Point(46, 13);
+            this.bttn_atrás.Name = "bttn_atrás";
+            this.bttn_atrás.Size = new System.Drawing.Size(75, 23);
+            this.bttn_atrás.TabIndex = 21;
+            this.bttn_atrás.Text = "Atrás";
+            this.bttn_atrás.UseVisualStyleBackColor = true;
+            this.bttn_atrás.Click += new System.EventHandler(this.bttn_atrás_Click);
+            // 
             // añadir_empleado
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(873, 532);
+            this.Controls.Add(this.bttn_atrás);
             this.Controls.Add(this.btn_registrar);
             this.Controls.Add(this.txt_confirmar_contraseña);
             this.Controls.Add(this.txt_contraseña);
@@ -272,5 +284,6 @@
         private System.Windows.Forms.TextBox txt_contraseña;
         private System.Windows.Forms.TextBox txt_confirmar_contraseña;
         private System.Windows.Forms.Button btn_registrar;
+        private System.Windows.Forms.Button bttn_atrás;
     }
 }

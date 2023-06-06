@@ -33,9 +33,9 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btn_actualizar = new System.Windows.Forms.Button();
             this.linklbl_agregar_producto = new System.Windows.Forms.LinkLabel();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dgv_productos = new System.Windows.Forms.DataGridView();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_productos)).BeginInit();
             this.SuspendLayout();
             // 
             // lbl_lista_productos
@@ -85,22 +85,22 @@
             this.linklbl_agregar_producto.Text = "Agregar producto...";
             this.linklbl_agregar_producto.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linklbl_agregar_producto_LinkClicked);
             // 
-            // dataGridView1
+            // dgv_productos
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(78, 115);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(741, 150);
-            this.dataGridView1.TabIndex = 23;
+            this.dgv_productos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgv_productos.Location = new System.Drawing.Point(78, 115);
+            this.dgv_productos.Name = "dgv_productos";
+            this.dgv_productos.RowHeadersWidth = 51;
+            this.dgv_productos.RowTemplate.Height = 24;
+            this.dgv_productos.Size = new System.Drawing.Size(741, 150);
+            this.dgv_productos.TabIndex = 23;
             // 
             // añadir_producto
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(873, 532);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.dgv_productos);
             this.Controls.Add(this.linklbl_agregar_producto);
             this.Controls.Add(this.btn_actualizar);
             this.Controls.Add(this.lbl_lista_productos);
@@ -108,8 +108,9 @@
             this.Name = "añadir_producto";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "añadir_producto";
+            this.Load += new System.EventHandler(this.añadir_producto_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_productos)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -121,6 +122,6 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button btn_actualizar;
         private System.Windows.Forms.LinkLabel linklbl_agregar_producto;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dgv_productos;
     }
 }
