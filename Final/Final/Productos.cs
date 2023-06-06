@@ -10,7 +10,7 @@ namespace Final
     {
         public string Codigo { get; set; }
         public string Nombre { get; set; }
-        public string Costo { get; set; }
-        public string Reserva { get; set; }
+        public int Costo { get; set; }
+        public int Reserva { get; set; }
     }
 }

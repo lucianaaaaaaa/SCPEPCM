@@ -69,6 +69,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Almacén.cs" />
     <Compile Include="añadir_empleado.cs">
       <SubType>Form</SubType>
     </Compile>

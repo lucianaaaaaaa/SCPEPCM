@@ -31,11 +31,9 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(datos_agregar_producto));
             this.lbl_nombre_producto = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.txt_nombre_producto = new System.Windows.Forms.TextBox();
-            this.txt_codigo_producto = new System.Windows.Forms.TextBox();
             this.txt_costo_producto = new System.Windows.Forms.TextBox();
             this.txt_cantidad_producto = new System.Windows.Forms.TextBox();
             this.btn_agregar_producto = new System.Windows.Forms.Button();
@@ -62,21 +60,11 @@
             this.pictureBox1.TabIndex = 3;
             this.pictureBox1.TabStop = false;
             // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Mongolian Baiti", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(265, 222);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(85, 24);
-            this.label1.TabIndex = 4;
-            this.label1.Text = "Codigo:";
-            // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Mongolian Baiti", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(280, 276);
+            this.label2.Location = new System.Drawing.Point(280, 247);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(70, 24);
             this.label2.TabIndex = 5;
@@ -99,16 +87,9 @@
             this.txt_nombre_producto.Size = new System.Drawing.Size(190, 22);
             this.txt_nombre_producto.TabIndex = 7;
             // 
-            // txt_codigo_producto
-            // 
-            this.txt_codigo_producto.Location = new System.Drawing.Point(388, 222);
-            this.txt_codigo_producto.Name = "txt_codigo_producto";
-            this.txt_codigo_producto.Size = new System.Drawing.Size(190, 22);
-            this.txt_codigo_producto.TabIndex = 8;
-            // 
             // txt_costo_producto
             // 
-            this.txt_costo_producto.Location = new System.Drawing.Point(388, 276);
+            this.txt_costo_producto.Location = new System.Drawing.Point(388, 250);
             this.txt_costo_producto.Name = "txt_costo_producto";
             this.txt_costo_producto.Size = new System.Drawing.Size(190, 22);
             this.txt_costo_producto.TabIndex = 9;
@@ -141,11 +122,9 @@
             this.Controls.Add(this.btn_agregar_producto);
             this.Controls.Add(this.txt_cantidad_producto);
             this.Controls.Add(this.txt_costo_producto);
-            this.Controls.Add(this.txt_codigo_producto);
             this.Controls.Add(this.txt_nombre_producto);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.lbl_nombre_producto);
             this.Name = "datos_agregar_producto";
@@ -161,11 +140,9 @@
 
         private System.Windows.Forms.Label lbl_nombre_producto;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox txt_nombre_producto;
-        private System.Windows.Forms.TextBox txt_codigo_producto;
         private System.Windows.Forms.TextBox txt_costo_producto;
         private System.Windows.Forms.TextBox txt_cantidad_producto;
         private System.Windows.Forms.Button btn_agregar_producto;

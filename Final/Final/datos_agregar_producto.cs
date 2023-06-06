@@ -28,39 +28,47 @@ namespace Final
 
         private async void btn_agregar_producto_Click(object sender, EventArgs e)
         {
-            if(txt_nombre_producto.Text=="" || txt_codigo_producto.Text=="" || txt_costo_producto.Text==""|| txt_cantidad_producto.Text == "")
+            if(txt_nombre_producto.Text=="" || txt_costo_producto.Text==""|| txt_cantidad_producto.Text == "")
             {
+                var datalayerAlmacen = new Almacén
+                {
+                    Productos = 0
+                };
+                SetResponse respi = await client.SetAsync("Reserva", datalayerAlmacen);
+                Almacén resultA = respi.ResultAs<Almacén>();
                 MessageBox.Show("Todos los campos deben estar llenos", "No se puede agregar producto",  MessageBoxButtons.OK, MessageBoxIcon.Warning );
             }
             else
             {
-                /*var datalayerProducto = new Productos
+                FirebaseResponse responseAlmacén = await client.GetAsync("Reserva/Productos");
+                Almacén reserva = responseAlmacén.ResultAs<Almacén>();
+
+                for (int i = 0; i < reserva.Productos; i++)
                 {
-                    Codigo = "1001",
-                    Nombre = "Cigarros",
-                    Costo = "3",
-                    Reserva = "20"
-                };
-                SetResponse resp = await client.SetAsync("Productos/" + txt_codigo_producto.Text, datalayerProducto);
-                Productos result = resp.ResultAs<Productos>();*/
-                FirebaseResponse responseProducto = await client.GetAsync("Productos/" + txt_codigo_producto.Text);
-                Productos producto = responseProducto.ResultAs<Productos>();
-                if(producto != null)
-                {
-                    MessageBox.Show("Este producto ya existe, no se puede agregar", "Falla al agregar Producto", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                }
-                else
-                {
-                    var datalayerProducto = new Productos
+                    FirebaseResponse responseProducto = await client.GetAsync("Productos/" + (1000+i).ToString());
+                    Productos producto = responseProducto.ResultAs<Productos>();
+                    if(producto.Nombre == txt_nombre_producto.Text)
                     {
-                        Codigo = txt_codigo_producto.Text,
-                        Nombre = txt_nombre_producto.Text,
-                        Costo = txt_costo_producto.Text,
-                        Reserva = txt_cantidad_producto.Text
-                    };
-                    SetResponse resp = await client.SetAsync("Productos/"+txt_codigo_producto.Text, datalayerProducto);
-                    Productos result = resp.ResultAs<Productos>();
+                        MessageBox.Show("Este producto ya existe, no se puede agregar", "Falla al agregar Producto", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                        this.Close();
+                    }
                 }
+
+                var datalayerProducto = new Productos
+                    {
+                        Codigo = (reserva.Productos+1000).ToString(),
+                        Nombre = txt_nombre_producto.Text,
+                        Costo = Int32.Parse(txt_costo_producto.Text),
+                        Reserva = Int32.Parse(txt_cantidad_producto.Text)
+                    };
+                    var datalayerAlmacén = new Almacén
+                    {
+                        Productos = reserva.Productos + 1
+                    };
+                    SetResponse resp = await client.SetAsync("Productos/"+ (reserva.Productos + 1000).ToString(), datalayerProducto);
+                    SetResponse respA = await client.SetAsync("Reserva/Productos", datalayerAlmacén);
+                    Productos result = resp.ResultAs<Productos>();
+                    Almacén resultA = resp.ResultAs<Almacén>();
             }
         }
 
@@ -68,19 +76,5 @@ namespace Final
         {
             client = new FireSharp.FirebaseClient(config);
         }
-        /*private async void button1_Click(object sender, EventArgs e)
-{
-   var datalayerEmpleado = new Empleados
-   {
-       usuario = "juanperro",
-       CI = "100230",
-       Password = "dcopn",
-       FNac = "123",
-       FEntrada = "1000",
-       Nombre = "Sorocum"
-   };
-   SetResponse resp = await client.SetAsync("Empleados/juanperro", datalayerEmpleado);
-   Empleados result = resp.ResultAs<Empleados>();
-}*/
     }
 }
