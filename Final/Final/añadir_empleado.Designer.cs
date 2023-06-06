@@ -221,9 +221,9 @@
             // 
             // bttn_atrás
             // 
-            this.bttn_atrás.Location = new System.Drawing.Point(46, 13);
+            this.bttn_atrás.Location = new System.Drawing.Point(12, 12);
             this.bttn_atrás.Name = "bttn_atrás";
-            this.bttn_atrás.Size = new System.Drawing.Size(75, 23);
+            this.bttn_atrás.Size = new System.Drawing.Size(109, 32);
             this.bttn_atrás.TabIndex = 21;
             this.bttn_atrás.Text = "Atrás";
             this.bttn_atrás.UseVisualStyleBackColor = true;

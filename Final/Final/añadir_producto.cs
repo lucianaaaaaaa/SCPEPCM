@@ -43,6 +43,7 @@ namespace Final
 
         private async void llenar_dgv_productos()
         {
+            lista_productos.Clear();
             FirebaseResponse responseAlmacén = await client.GetAsync("Reserva/Productos");
             Almacén reserva = responseAlmacén.ResultAs<Almacén>();
 
@@ -55,6 +56,7 @@ namespace Final
                     lista_productos.Add(producto);
                 }
             }
+            dgv_productos.DataSource = null;
             dgv_productos.DataSource = lista_productos;
         }
 
@@ -62,6 +64,18 @@ namespace Final
         {
             client = new FireSharp.FirebaseClient(config);
             llenar_dgv_productos();
+        }
+
+        private void btn_actualizar_Click(object sender, EventArgs e)
+        {
+            llenar_dgv_productos();
+        }
+
+        private void bttn_atrás_Click(object sender, EventArgs e)
+        {
+            pantalla_dueño pd = new pantalla_dueño();
+            pd.Show();
+            this.Hide();
         }
     }
 }

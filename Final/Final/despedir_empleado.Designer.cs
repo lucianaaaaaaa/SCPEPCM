@@ -35,6 +35,7 @@
             this.txt_eliminar_nombre_usuario = new System.Windows.Forms.TextBox();
             this.txt_nombre_aplicacion = new System.Windows.Forms.TextBox();
             this.btn_eliminar_empleado = new System.Windows.Forms.Button();
+            this.bttn_atrás = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.picb_volver)).BeginInit();
             this.SuspendLayout();
             // 
@@ -95,11 +96,22 @@
             this.btn_eliminar_empleado.Text = "Eliminar";
             this.btn_eliminar_empleado.UseVisualStyleBackColor = false;
             // 
+            // bttn_atrás
+            // 
+            this.bttn_atrás.Location = new System.Drawing.Point(12, 12);
+            this.bttn_atrás.Name = "bttn_atrás";
+            this.bttn_atrás.Size = new System.Drawing.Size(109, 32);
+            this.bttn_atrás.TabIndex = 23;
+            this.bttn_atrás.Text = "Atrás";
+            this.bttn_atrás.UseVisualStyleBackColor = true;
+            this.bttn_atrás.Click += new System.EventHandler(this.bttn_atrás_Click);
+            // 
             // despedir_empleado
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(873, 532);
+            this.Controls.Add(this.bttn_atrás);
             this.Controls.Add(this.btn_eliminar_empleado);
             this.Controls.Add(this.txt_nombre_aplicacion);
             this.Controls.Add(this.txt_eliminar_nombre_usuario);
@@ -123,5 +135,6 @@
         private System.Windows.Forms.TextBox txt_eliminar_nombre_usuario;
         private System.Windows.Forms.TextBox txt_nombre_aplicacion;
         private System.Windows.Forms.Button btn_eliminar_empleado;
+        private System.Windows.Forms.Button bttn_atrás;
     }
 }

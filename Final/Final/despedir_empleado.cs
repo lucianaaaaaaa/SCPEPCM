@@ -23,5 +23,12 @@ namespace Final
             pantalla_dueño pantalla = new pantalla_dueño();
             pantalla.Show();
         }
+
+        private void bttn_atrás_Click(object sender, EventArgs e)
+        {
+            pantalla_dueño pd = new pantalla_dueño();
+            pd.Show();
+            this.Hide();
+        }
     }
 }

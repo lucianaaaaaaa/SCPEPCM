@@ -34,6 +34,7 @@
             this.btn_actualizar = new System.Windows.Forms.Button();
             this.linklbl_agregar_producto = new System.Windows.Forms.LinkLabel();
             this.dgv_productos = new System.Windows.Forms.DataGridView();
+            this.bttn_atrás = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_productos)).BeginInit();
             this.SuspendLayout();
@@ -43,7 +44,7 @@
             this.lbl_lista_productos.AutoSize = true;
             this.lbl_lista_productos.BackColor = System.Drawing.Color.Thistle;
             this.lbl_lista_productos.Font = new System.Drawing.Font("Mongolian Baiti", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_lista_productos.Location = new System.Drawing.Point(43, 35);
+            this.lbl_lista_productos.Location = new System.Drawing.Point(74, 47);
             this.lbl_lista_productos.Name = "lbl_lista_productos";
             this.lbl_lista_productos.Size = new System.Drawing.Size(189, 24);
             this.lbl_lista_productos.TabIndex = 2;
@@ -71,6 +72,7 @@
             this.btn_actualizar.TabIndex = 21;
             this.btn_actualizar.Text = "Actualizar";
             this.btn_actualizar.UseVisualStyleBackColor = false;
+            this.btn_actualizar.Click += new System.EventHandler(this.btn_actualizar_Click);
             // 
             // linklbl_agregar_producto
             // 
@@ -95,11 +97,22 @@
             this.dgv_productos.Size = new System.Drawing.Size(741, 150);
             this.dgv_productos.TabIndex = 23;
             // 
+            // bttn_atrás
+            // 
+            this.bttn_atrás.Location = new System.Drawing.Point(12, 12);
+            this.bttn_atrás.Name = "bttn_atrás";
+            this.bttn_atrás.Size = new System.Drawing.Size(109, 32);
+            this.bttn_atrás.TabIndex = 24;
+            this.bttn_atrás.Text = "Atrás";
+            this.bttn_atrás.UseVisualStyleBackColor = true;
+            this.bttn_atrás.Click += new System.EventHandler(this.bttn_atrás_Click);
+            // 
             // añadir_producto
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(873, 532);
+            this.Controls.Add(this.bttn_atrás);
             this.Controls.Add(this.dgv_productos);
             this.Controls.Add(this.linklbl_agregar_producto);
             this.Controls.Add(this.btn_actualizar);
@@ -123,5 +136,6 @@
         private System.Windows.Forms.Button btn_actualizar;
         private System.Windows.Forms.LinkLabel linklbl_agregar_producto;
         private System.Windows.Forms.DataGridView dgv_productos;
+        private System.Windows.Forms.Button bttn_atrás;
     }
 }

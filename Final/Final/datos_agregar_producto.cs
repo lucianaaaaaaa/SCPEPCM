@@ -76,5 +76,10 @@ namespace Final
         {
             client = new FireSharp.FirebaseClient(config);
         }
+
+        private void bttn_atrás_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

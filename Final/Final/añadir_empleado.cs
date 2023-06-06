@@ -31,7 +31,9 @@ namespace Final
 
         private void bttn_atrás_Click(object sender, EventArgs e)
         {
-
+            pantalla_dueño pt = new pantalla_dueño();
+            pt.Show();
+            this.Hide();
         }
     }
 }

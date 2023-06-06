@@ -37,6 +37,7 @@
             this.txt_costo_producto = new System.Windows.Forms.TextBox();
             this.txt_cantidad_producto = new System.Windows.Forms.TextBox();
             this.btn_agregar_producto = new System.Windows.Forms.Button();
+            this.bttn_atrás = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -114,11 +115,22 @@
             this.btn_agregar_producto.UseVisualStyleBackColor = false;
             this.btn_agregar_producto.Click += new System.EventHandler(this.btn_agregar_producto_Click);
             // 
+            // bttn_atrás
+            // 
+            this.bttn_atrás.Location = new System.Drawing.Point(22, 12);
+            this.bttn_atrás.Name = "bttn_atrás";
+            this.bttn_atrás.Size = new System.Drawing.Size(109, 32);
+            this.bttn_atrás.TabIndex = 22;
+            this.bttn_atrás.Text = "Atrás";
+            this.bttn_atrás.UseVisualStyleBackColor = true;
+            this.bttn_atrás.Click += new System.EventHandler(this.bttn_atrás_Click);
+            // 
             // datos_agregar_producto
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(873, 532);
+            this.Controls.Add(this.bttn_atrás);
             this.Controls.Add(this.btn_agregar_producto);
             this.Controls.Add(this.txt_cantidad_producto);
             this.Controls.Add(this.txt_costo_producto);
@@ -146,5 +158,6 @@
         private System.Windows.Forms.TextBox txt_costo_producto;
         private System.Windows.Forms.TextBox txt_cantidad_producto;
         private System.Windows.Forms.Button btn_agregar_producto;
+        private System.Windows.Forms.Button bttn_atrás;
     }
 }
