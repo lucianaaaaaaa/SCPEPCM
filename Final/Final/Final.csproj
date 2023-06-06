@@ -81,6 +81,7 @@
     <Compile Include="añadir_producto.Designer.cs">
       <DependentUpon>añadir_producto.cs</DependentUpon>
     </Compile>
+    <Compile Include="Productos.cs" />
     <Compile Include="DatabaseFirebase.cs" />
     <Compile Include="datos_agregar_producto.cs">
       <SubType>Form</SubType>

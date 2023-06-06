@@ -131,6 +131,7 @@
             this.btn_agregar_producto.TabIndex = 21;
             this.btn_agregar_producto.Text = "Agregar";
             this.btn_agregar_producto.UseVisualStyleBackColor = false;
+            this.btn_agregar_producto.Click += new System.EventHandler(this.btn_agregar_producto_Click);
             // 
             // datos_agregar_producto
             // 
@@ -149,6 +150,7 @@
             this.Controls.Add(this.lbl_nombre_producto);
             this.Name = "datos_agregar_producto";
             this.Text = "datos_agregar_producto";
+            this.Load += new System.EventHandler(this.datos_agregar_producto_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

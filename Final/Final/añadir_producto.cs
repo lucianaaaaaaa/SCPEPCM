@@ -23,5 +23,11 @@ namespace Final
             pantalla_dueño pantalla = new pantalla_dueño();
             pantalla.Show();
         }
+
+        private void linklbl_agregar_producto_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            datos_agregar_producto datos_producto = new datos_agregar_producto();
+            datos_producto.Show();
+        }
     }
 }

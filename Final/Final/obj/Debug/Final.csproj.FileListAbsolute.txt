@@ -53,3 +53,38 @@ E:\Documents\UCB\SIs 1\Proyecto final\SCPEPCM\Final\Final\bin\Debug\System.Net.H
 E:\Documents\UCB\SIs 1\Proyecto final\SCPEPCM\Final\Final\bin\Debug\System.Net.Http.Primitives.xml
 E:\Documents\UCB\SIs 1\Proyecto final\SCPEPCM\Final\Final\obj\Debug\Final.csproj.App.config
 E:\Documents\UCB\SIs 1\Proyecto final\SCPEPCM\Final\Final\obj\Debug\Final.csproj.CopyComplete
+C:\Users\jfsor\Dropbox\PC\Documents\SCPEPCM\Final\Final\bin\Debug\Final.exe.config
+C:\Users\jfsor\Dropbox\PC\Documents\SCPEPCM\Final\Final\bin\Debug\Final.exe
+C:\Users\jfsor\Dropbox\PC\Documents\SCPEPCM\Final\Final\bin\Debug\Final.pdb
+C:\Users\jfsor\Dropbox\PC\Documents\SCPEPCM\Final\Final\bin\Debug\FireSharp.dll
+C:\Users\jfsor\Dropbox\PC\Documents\SCPEPCM\Final\Final\bin\Debug\Microsoft.Threading.Tasks.dll
+C:\Users\jfsor\Dropbox\PC\Documents\SCPEPCM\Final\Final\bin\Debug\Microsoft.Threading.Tasks.Extensions.Desktop.dll
+C:\Users\jfsor\Dropbox\PC\Documents\SCPEPCM\Final\Final\bin\Debug\Microsoft.Threading.Tasks.Extensions.dll
+C:\Users\jfsor\Dropbox\PC\Documents\SCPEPCM\Final\Final\bin\Debug\Newtonsoft.Json.dll
+C:\Users\jfsor\Dropbox\PC\Documents\SCPEPCM\Final\Final\bin\Debug\System.Net.Http.Extensions.dll
+C:\Users\jfsor\Dropbox\PC\Documents\SCPEPCM\Final\Final\bin\Debug\System.Net.Http.Primitives.dll
+C:\Users\jfsor\Dropbox\PC\Documents\SCPEPCM\Final\Final\bin\Debug\Microsoft.Threading.Tasks.xml
+C:\Users\jfsor\Dropbox\PC\Documents\SCPEPCM\Final\Final\bin\Debug\Microsoft.Threading.Tasks.Extensions.xml
+C:\Users\jfsor\Dropbox\PC\Documents\SCPEPCM\Final\Final\bin\Debug\Microsoft.Threading.Tasks.Extensions.Desktop.xml
+C:\Users\jfsor\Dropbox\PC\Documents\SCPEPCM\Final\Final\bin\Debug\Newtonsoft.Json.xml
+C:\Users\jfsor\Dropbox\PC\Documents\SCPEPCM\Final\Final\bin\Debug\System.Net.Http.Extensions.xml
+C:\Users\jfsor\Dropbox\PC\Documents\SCPEPCM\Final\Final\bin\Debug\System.Net.Http.Primitives.xml
+C:\Users\jfsor\Dropbox\PC\Documents\SCPEPCM\Final\Final\obj\Debug\Final.csproj.App.config
+C:\Users\jfsor\Dropbox\PC\Documents\SCPEPCM\Final\Final\obj\Debug\Final.csproj.AssemblyReference.cache
+C:\Users\jfsor\Dropbox\PC\Documents\SCPEPCM\Final\Final\obj\Debug\Final.csproj.SuggestedBindingRedirects.cache
+C:\Users\jfsor\Dropbox\PC\Documents\SCPEPCM\Final\Final\obj\Debug\Final.añadir_empleado.resources
+C:\Users\jfsor\Dropbox\PC\Documents\SCPEPCM\Final\Final\obj\Debug\Final.añadir_producto.resources
+C:\Users\jfsor\Dropbox\PC\Documents\SCPEPCM\Final\Final\obj\Debug\Final.datos_agregar_producto.resources
+C:\Users\jfsor\Dropbox\PC\Documents\SCPEPCM\Final\Final\obj\Debug\Final.despedir_empleado.resources
+C:\Users\jfsor\Dropbox\PC\Documents\SCPEPCM\Final\Final\obj\Debug\Final.Form1.resources
+C:\Users\jfsor\Dropbox\PC\Documents\SCPEPCM\Final\Final\obj\Debug\Final.generar_comprobante.resources
+C:\Users\jfsor\Dropbox\PC\Documents\SCPEPCM\Final\Final\obj\Debug\Final.Inicio_Sesion.resources
+C:\Users\jfsor\Dropbox\PC\Documents\SCPEPCM\Final\Final\obj\Debug\Final.pantalla_dueño.resources
+C:\Users\jfsor\Dropbox\PC\Documents\SCPEPCM\Final\Final\obj\Debug\Final.pantalla_empleado.resources
+C:\Users\jfsor\Dropbox\PC\Documents\SCPEPCM\Final\Final\obj\Debug\Final.Properties.Resources.resources
+C:\Users\jfsor\Dropbox\PC\Documents\SCPEPCM\Final\Final\obj\Debug\Final.ver_inventario.resources
+C:\Users\jfsor\Dropbox\PC\Documents\SCPEPCM\Final\Final\obj\Debug\Final.csproj.GenerateResource.cache
+C:\Users\jfsor\Dropbox\PC\Documents\SCPEPCM\Final\Final\obj\Debug\Final.csproj.CoreCompileInputs.cache
+C:\Users\jfsor\Dropbox\PC\Documents\SCPEPCM\Final\Final\obj\Debug\Final.csproj.CopyComplete
+C:\Users\jfsor\Dropbox\PC\Documents\SCPEPCM\Final\Final\obj\Debug\Final.exe
+C:\Users\jfsor\Dropbox\PC\Documents\SCPEPCM\Final\Final\obj\Debug\Final.pdb
