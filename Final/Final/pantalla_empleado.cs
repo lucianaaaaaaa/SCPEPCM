@@ -26,5 +26,15 @@ namespace Final
         {
 
         }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void cmb_productos_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

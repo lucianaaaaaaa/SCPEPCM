@@ -107,10 +107,11 @@
             // cmb_productos
             // 
             this.cmb_productos.FormattingEnabled = true;
-            this.cmb_productos.Location = new System.Drawing.Point(145, 357);
+            this.cmb_productos.Location = new System.Drawing.Point(56, 355);
             this.cmb_productos.Name = "cmb_productos";
-            this.cmb_productos.Size = new System.Drawing.Size(121, 24);
+            this.cmb_productos.Size = new System.Drawing.Size(265, 24);
             this.cmb_productos.TabIndex = 9;
+            this.cmb_productos.SelectedIndexChanged += new System.EventHandler(this.cmb_productos_SelectedIndexChanged);
             // 
             // txt_nombre_cliente
             // 
@@ -128,7 +129,7 @@
             // 
             // txt_cantidad
             // 
-            this.txt_cantidad.Location = new System.Drawing.Point(377, 357);
+            this.txt_cantidad.Location = new System.Drawing.Point(417, 355);
             this.txt_cantidad.Name = "txt_cantidad";
             this.txt_cantidad.Size = new System.Drawing.Size(83, 22);
             this.txt_cantidad.TabIndex = 12;
@@ -162,17 +163,18 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Mongolian Baiti", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(141, 318);
+            this.label4.Location = new System.Drawing.Point(52, 318);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(101, 24);
             this.label4.TabIndex = 24;
             this.label4.Text = "Producto:";
+            this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
             // label5
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Mongolian Baiti", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(338, 318);
+            this.label5.Location = new System.Drawing.Point(413, 318);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(99, 24);
             this.label5.TabIndex = 25;
