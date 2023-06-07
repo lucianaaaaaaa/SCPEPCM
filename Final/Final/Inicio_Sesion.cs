@@ -57,7 +57,7 @@ namespace Final
                 else
                 {
                     //Validar si el empleado existe
-                    FirebaseResponse responseEmpleado = await client.GetAsync("Empleados/" + txt_usuario.Text);
+                    FirebaseResponse responseEmpleado = await client.GetAsync("Empleados/" + txt_usuario.Text.ToString());
                     
                     Empleados empleado = responseEmpleado.ResultAs<Empleados>();
                     if(empleado == null)
@@ -108,6 +108,20 @@ namespace Final
                 //Conectado
             }
             
+        }
+
+        private void SinCaracteresRaros(object sender, KeyPressEventArgs e)
+        {
+
+            if (char.IsLetter(e.KeyChar) || char.IsNumber(e.KeyChar) ||  e.KeyChar == (char)Keys.Back)
+            {
+                txt_usuario.BackColor = Color.White;
+            }
+            else
+            {
+                e.Handled = true;
+                txt_usuario.BackColor = Color.Red;
+            }
         }
 
         /*private async void button1_Click(object sender, EventArgs e)

@@ -32,10 +32,10 @@
             this.picb_volver = new System.Windows.Forms.PictureBox();
             this.lbl_nombre_usuario = new System.Windows.Forms.Label();
             this.lbl_confirmar = new System.Windows.Forms.Label();
-            this.txt_eliminar_nombre_usuario = new System.Windows.Forms.TextBox();
             this.txt_nombre_aplicacion = new System.Windows.Forms.TextBox();
             this.btn_eliminar_empleado = new System.Windows.Forms.Button();
             this.bttn_atrás = new System.Windows.Forms.Button();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.picb_volver)).BeginInit();
             this.SuspendLayout();
             // 
@@ -54,7 +54,7 @@
             // 
             this.lbl_nombre_usuario.AutoSize = true;
             this.lbl_nombre_usuario.Font = new System.Drawing.Font("Mongolian Baiti", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_nombre_usuario.Location = new System.Drawing.Point(162, 187);
+            this.lbl_nombre_usuario.Location = new System.Drawing.Point(100, 187);
             this.lbl_nombre_usuario.Name = "lbl_nombre_usuario";
             this.lbl_nombre_usuario.Size = new System.Drawing.Size(199, 24);
             this.lbl_nombre_usuario.TabIndex = 5;
@@ -70,18 +70,12 @@
             this.lbl_confirmar.TabIndex = 6;
             this.lbl_confirmar.Text = "Ingrese el nombre de esta plataforma para confirmar:";
             // 
-            // txt_eliminar_nombre_usuario
-            // 
-            this.txt_eliminar_nombre_usuario.Location = new System.Drawing.Point(390, 188);
-            this.txt_eliminar_nombre_usuario.Name = "txt_eliminar_nombre_usuario";
-            this.txt_eliminar_nombre_usuario.Size = new System.Drawing.Size(227, 22);
-            this.txt_eliminar_nombre_usuario.TabIndex = 7;
-            // 
             // txt_nombre_aplicacion
             // 
+            this.txt_nombre_aplicacion.Font = new System.Drawing.Font("Mongolian Baiti", 13.8F);
             this.txt_nombre_aplicacion.Location = new System.Drawing.Point(314, 371);
             this.txt_nombre_aplicacion.Name = "txt_nombre_aplicacion";
-            this.txt_nombre_aplicacion.Size = new System.Drawing.Size(222, 22);
+            this.txt_nombre_aplicacion.Size = new System.Drawing.Size(222, 34);
             this.txt_nombre_aplicacion.TabIndex = 8;
             // 
             // btn_eliminar_empleado
@@ -95,6 +89,7 @@
             this.btn_eliminar_empleado.TabIndex = 22;
             this.btn_eliminar_empleado.Text = "Eliminar";
             this.btn_eliminar_empleado.UseVisualStyleBackColor = false;
+            this.btn_eliminar_empleado.Click += new System.EventHandler(this.btn_eliminar_empleado_Click);
             // 
             // bttn_atrás
             // 
@@ -106,21 +101,31 @@
             this.bttn_atrás.UseVisualStyleBackColor = true;
             this.bttn_atrás.Click += new System.EventHandler(this.bttn_atrás_Click);
             // 
+            // comboBox1
+            // 
+            this.comboBox1.Font = new System.Drawing.Font("Mongolian Baiti", 13.8F);
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(368, 187);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(441, 32);
+            this.comboBox1.TabIndex = 24;
+            // 
             // despedir_empleado
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(873, 532);
+            this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.bttn_atrás);
             this.Controls.Add(this.btn_eliminar_empleado);
             this.Controls.Add(this.txt_nombre_aplicacion);
-            this.Controls.Add(this.txt_eliminar_nombre_usuario);
             this.Controls.Add(this.lbl_confirmar);
             this.Controls.Add(this.lbl_nombre_usuario);
             this.Controls.Add(this.picb_volver);
             this.Name = "despedir_empleado";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "despedir_empleado";
+            this.Load += new System.EventHandler(this.despedir_empleado_Load);
             ((System.ComponentModel.ISupportInitialize)(this.picb_volver)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -132,9 +137,9 @@
         private System.Windows.Forms.PictureBox picb_volver;
         private System.Windows.Forms.Label lbl_nombre_usuario;
         private System.Windows.Forms.Label lbl_confirmar;
-        private System.Windows.Forms.TextBox txt_eliminar_nombre_usuario;
         private System.Windows.Forms.TextBox txt_nombre_aplicacion;
         private System.Windows.Forms.Button btn_eliminar_empleado;
         private System.Windows.Forms.Button bttn_atrás;
+        private System.Windows.Forms.ComboBox comboBox1;
     }
 }

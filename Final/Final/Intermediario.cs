@@ -8,8 +8,10 @@ namespace Final
 {
     static class Intermediario
     {
-        public static string userDueño = "eljefe@gmail.com";
+        public static string userDueño = "eljefe"; //hay problemas con el "."
         public static string passDueño = "tengoplata123";
         public static bool soyElDueño = false;
+        public static string nombreCliente;
+        public static string nitCliente;
     }
 }

@@ -39,7 +39,6 @@
             this.lbl_contraseña = new System.Windows.Forms.Label();
             this.lbl_confirmar_contraseña = new System.Windows.Forms.Label();
             this.txt_nombres = new System.Windows.Forms.TextBox();
-            this.txt_apellidos = new System.Windows.Forms.TextBox();
             this.txt_fecha_nacimiento = new System.Windows.Forms.TextBox();
             this.txt_nacionalidad = new System.Windows.Forms.TextBox();
             this.txt_CI = new System.Windows.Forms.TextBox();
@@ -49,6 +48,7 @@
             this.txt_confirmar_contraseña = new System.Windows.Forms.TextBox();
             this.btn_registrar = new System.Windows.Forms.Button();
             this.bttn_atrás = new System.Windows.Forms.Button();
+            this.checkBox1 = new System.Windows.Forms.CheckBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -148,21 +148,14 @@
             // 
             this.txt_nombres.Location = new System.Drawing.Point(352, 117);
             this.txt_nombres.Name = "txt_nombres";
-            this.txt_nombres.Size = new System.Drawing.Size(136, 22);
+            this.txt_nombres.Size = new System.Drawing.Size(446, 22);
             this.txt_nombres.TabIndex = 11;
-            // 
-            // txt_apellidos
-            // 
-            this.txt_apellidos.Location = new System.Drawing.Point(545, 117);
-            this.txt_apellidos.Name = "txt_apellidos";
-            this.txt_apellidos.Size = new System.Drawing.Size(136, 22);
-            this.txt_apellidos.TabIndex = 12;
             // 
             // txt_fecha_nacimiento
             // 
             this.txt_fecha_nacimiento.Location = new System.Drawing.Point(352, 163);
             this.txt_fecha_nacimiento.Name = "txt_fecha_nacimiento";
-            this.txt_fecha_nacimiento.Size = new System.Drawing.Size(136, 22);
+            this.txt_fecha_nacimiento.Size = new System.Drawing.Size(446, 22);
             this.txt_fecha_nacimiento.TabIndex = 13;
             // 
             // txt_nacionalidad
@@ -181,7 +174,7 @@
             // 
             // txt_fecha_ingreso
             // 
-            this.txt_fecha_ingreso.Location = new System.Drawing.Point(352, 253);
+            this.txt_fecha_ingreso.Location = new System.Drawing.Point(352, 256);
             this.txt_fecha_ingreso.Name = "txt_fecha_ingreso";
             this.txt_fecha_ingreso.Size = new System.Drawing.Size(136, 22);
             this.txt_fecha_ingreso.TabIndex = 16;
@@ -190,21 +183,21 @@
             // 
             this.txt_nombre_usuario.Location = new System.Drawing.Point(352, 336);
             this.txt_nombre_usuario.Name = "txt_nombre_usuario";
-            this.txt_nombre_usuario.Size = new System.Drawing.Size(136, 22);
+            this.txt_nombre_usuario.Size = new System.Drawing.Size(230, 22);
             this.txt_nombre_usuario.TabIndex = 17;
             // 
             // txt_contraseña
             // 
             this.txt_contraseña.Location = new System.Drawing.Point(352, 382);
             this.txt_contraseña.Name = "txt_contraseña";
-            this.txt_contraseña.Size = new System.Drawing.Size(136, 22);
+            this.txt_contraseña.Size = new System.Drawing.Size(230, 22);
             this.txt_contraseña.TabIndex = 18;
             // 
             // txt_confirmar_contraseña
             // 
             this.txt_confirmar_contraseña.Location = new System.Drawing.Point(352, 430);
             this.txt_confirmar_contraseña.Name = "txt_confirmar_contraseña";
-            this.txt_confirmar_contraseña.Size = new System.Drawing.Size(136, 22);
+            this.txt_confirmar_contraseña.Size = new System.Drawing.Size(230, 22);
             this.txt_confirmar_contraseña.TabIndex = 19;
             // 
             // btn_registrar
@@ -212,12 +205,13 @@
             this.btn_registrar.BackColor = System.Drawing.Color.Thistle;
             this.btn_registrar.Font = new System.Drawing.Font("Mongolian Baiti", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_registrar.ForeColor = System.Drawing.Color.White;
-            this.btn_registrar.Location = new System.Drawing.Point(585, 364);
+            this.btn_registrar.Location = new System.Drawing.Point(622, 364);
             this.btn_registrar.Name = "btn_registrar";
             this.btn_registrar.Size = new System.Drawing.Size(160, 55);
             this.btn_registrar.TabIndex = 20;
             this.btn_registrar.Text = "Registrar";
             this.btn_registrar.UseVisualStyleBackColor = false;
+            this.btn_registrar.Click += new System.EventHandler(this.btn_registrar_Click);
             // 
             // bttn_atrás
             // 
@@ -229,11 +223,24 @@
             this.bttn_atrás.UseVisualStyleBackColor = true;
             this.bttn_atrás.Click += new System.EventHandler(this.bttn_atrás_Click);
             // 
+            // checkBox1
+            // 
+            this.checkBox1.AutoSize = true;
+            this.checkBox1.Font = new System.Drawing.Font("Mongolian Baiti", 13.8F);
+            this.checkBox1.Location = new System.Drawing.Point(525, 253);
+            this.checkBox1.Name = "checkBox1";
+            this.checkBox1.Size = new System.Drawing.Size(72, 28);
+            this.checkBox1.TabIndex = 22;
+            this.checkBox1.Text = "Hoy";
+            this.checkBox1.UseVisualStyleBackColor = true;
+            this.checkBox1.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
+            // 
             // añadir_empleado
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(873, 532);
+            this.Controls.Add(this.checkBox1);
             this.Controls.Add(this.bttn_atrás);
             this.Controls.Add(this.btn_registrar);
             this.Controls.Add(this.txt_confirmar_contraseña);
@@ -243,7 +250,6 @@
             this.Controls.Add(this.txt_CI);
             this.Controls.Add(this.txt_nacionalidad);
             this.Controls.Add(this.txt_fecha_nacimiento);
-            this.Controls.Add(this.txt_apellidos);
             this.Controls.Add(this.txt_nombres);
             this.Controls.Add(this.lbl_confirmar_contraseña);
             this.Controls.Add(this.lbl_contraseña);
@@ -257,6 +263,7 @@
             this.Name = "añadir_empleado";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "añadir_empleado";
+            this.Load += new System.EventHandler(this.añadir_empleado_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -275,7 +282,6 @@
         private System.Windows.Forms.Label lbl_contraseña;
         private System.Windows.Forms.Label lbl_confirmar_contraseña;
         private System.Windows.Forms.TextBox txt_nombres;
-        private System.Windows.Forms.TextBox txt_apellidos;
         private System.Windows.Forms.TextBox txt_fecha_nacimiento;
         private System.Windows.Forms.TextBox txt_nacionalidad;
         private System.Windows.Forms.TextBox txt_CI;
@@ -285,5 +291,6 @@
         private System.Windows.Forms.TextBox txt_confirmar_contraseña;
         private System.Windows.Forms.Button btn_registrar;
         private System.Windows.Forms.Button bttn_atrás;
+        private System.Windows.Forms.CheckBox checkBox1;
     }
 }

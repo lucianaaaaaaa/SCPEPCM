@@ -26,6 +26,7 @@ namespace Final
         public pantalla_empleado()
         {
             InitializeComponent();
+            cmb_productos.DropDownStyle = ComboBoxStyle.DropDownList;
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -83,7 +84,7 @@ namespace Final
                 Productos producto = responseProducto.ResultAs<Productos>();
                 if (producto.Nombre == cmb_productos.Text)
                 {
-                    if (Int32.Parse(txt_cantidad.Text) >= producto.Reserva)
+                    if (Int32.Parse(txt_cantidad.Text) > producto.Reserva)
                     {
                         MessageBox.Show("No nos quedan tantos productos en la tienda, solo disponemos de " + producto.Reserva.ToString() + " productos de este tipo", "Falta de reservas", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     }

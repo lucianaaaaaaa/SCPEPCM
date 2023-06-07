@@ -88,31 +88,35 @@
             // 
             // cmb_productos
             // 
+            this.cmb_productos.Font = new System.Drawing.Font("Mongolian Baiti", 13.8F);
             this.cmb_productos.FormattingEnabled = true;
-            this.cmb_productos.Location = new System.Drawing.Point(145, 357);
+            this.cmb_productos.Location = new System.Drawing.Point(12, 356);
             this.cmb_productos.Name = "cmb_productos";
-            this.cmb_productos.Size = new System.Drawing.Size(121, 24);
+            this.cmb_productos.Size = new System.Drawing.Size(376, 32);
             this.cmb_productos.TabIndex = 9;
             // 
             // txt_nombre_cliente
             // 
-            this.txt_nombre_cliente.Location = new System.Drawing.Point(312, 137);
+            this.txt_nombre_cliente.Font = new System.Drawing.Font("Mongolian Baiti", 13.8F);
+            this.txt_nombre_cliente.Location = new System.Drawing.Point(312, 131);
             this.txt_nombre_cliente.Name = "txt_nombre_cliente";
-            this.txt_nombre_cliente.Size = new System.Drawing.Size(200, 22);
+            this.txt_nombre_cliente.Size = new System.Drawing.Size(452, 34);
             this.txt_nombre_cliente.TabIndex = 10;
             // 
             // txt_nit_cliente
             // 
-            this.txt_nit_cliente.Location = new System.Drawing.Point(312, 186);
+            this.txt_nit_cliente.Font = new System.Drawing.Font("Mongolian Baiti", 13.8F);
+            this.txt_nit_cliente.Location = new System.Drawing.Point(312, 180);
             this.txt_nit_cliente.Name = "txt_nit_cliente";
-            this.txt_nit_cliente.Size = new System.Drawing.Size(200, 22);
+            this.txt_nit_cliente.Size = new System.Drawing.Size(452, 34);
             this.txt_nit_cliente.TabIndex = 11;
             // 
             // txt_cantidad
             // 
-            this.txt_cantidad.Location = new System.Drawing.Point(377, 357);
+            this.txt_cantidad.Font = new System.Drawing.Font("Mongolian Baiti", 13.8F);
+            this.txt_cantidad.Location = new System.Drawing.Point(429, 354);
             this.txt_cantidad.Name = "txt_cantidad";
-            this.txt_cantidad.Size = new System.Drawing.Size(83, 22);
+            this.txt_cantidad.Size = new System.Drawing.Size(152, 34);
             this.txt_cantidad.TabIndex = 12;
             // 
             // btn_agregar_canasta
@@ -145,7 +149,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Mongolian Baiti", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(141, 318);
+            this.label4.Location = new System.Drawing.Point(23, 318);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(101, 24);
             this.label4.TabIndex = 24;
@@ -155,7 +159,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Mongolian Baiti", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(338, 318);
+            this.label5.Location = new System.Drawing.Point(425, 318);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(99, 24);
             this.label5.TabIndex = 25;

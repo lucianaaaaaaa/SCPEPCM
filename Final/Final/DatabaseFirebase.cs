@@ -27,12 +27,12 @@ namespace Final
                 //Conectado
             }
         }
-        public async void addEmpleado(string usuario, string CI, string password,
+        /*public async void addEmpleado(string usuario, string CI, string password,
             string fNacimiento, string fEntrada, string nacionalidad, string nombre)
         {
             var datalayerEmpleado = new Empleados
             {
-                usuario = usuario,
+                Usuario = usuario,
                 CI = CI,
                 Password = password,
                 FNac = fNacimiento,
@@ -41,7 +41,7 @@ namespace Final
             };
 
             SetResponse respEmpleado = await client.SetAsync("Empleados/" + usuario, datalayerEmpleado);
-        }
+        }*/
         
     }
 }

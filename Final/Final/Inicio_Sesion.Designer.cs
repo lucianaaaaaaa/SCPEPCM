@@ -58,6 +58,7 @@
             this.txt_usuario.Name = "txt_usuario";
             this.txt_usuario.Size = new System.Drawing.Size(116, 22);
             this.txt_usuario.TabIndex = 4;
+            this.txt_usuario.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.SinCaracteresRaros);
             // 
             // txt_contraseña
             // 
