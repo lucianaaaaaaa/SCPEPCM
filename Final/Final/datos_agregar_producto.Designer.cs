@@ -83,23 +83,26 @@
             // 
             // txt_nombre_producto
             // 
-            this.txt_nombre_producto.Location = new System.Drawing.Point(388, 170);
+            this.txt_nombre_producto.Font = new System.Drawing.Font("Mongolian Baiti", 13.8F);
+            this.txt_nombre_producto.Location = new System.Drawing.Point(388, 159);
             this.txt_nombre_producto.Name = "txt_nombre_producto";
-            this.txt_nombre_producto.Size = new System.Drawing.Size(190, 22);
+            this.txt_nombre_producto.Size = new System.Drawing.Size(190, 34);
             this.txt_nombre_producto.TabIndex = 7;
             // 
             // txt_costo_producto
             // 
-            this.txt_costo_producto.Location = new System.Drawing.Point(388, 250);
+            this.txt_costo_producto.Font = new System.Drawing.Font("Mongolian Baiti", 13.8F);
+            this.txt_costo_producto.Location = new System.Drawing.Point(388, 237);
             this.txt_costo_producto.Name = "txt_costo_producto";
-            this.txt_costo_producto.Size = new System.Drawing.Size(190, 22);
+            this.txt_costo_producto.Size = new System.Drawing.Size(190, 34);
             this.txt_costo_producto.TabIndex = 9;
             // 
             // txt_cantidad_producto
             // 
-            this.txt_cantidad_producto.Location = new System.Drawing.Point(388, 332);
+            this.txt_cantidad_producto.Font = new System.Drawing.Font("Mongolian Baiti", 13.8F);
+            this.txt_cantidad_producto.Location = new System.Drawing.Point(388, 326);
             this.txt_cantidad_producto.Name = "txt_cantidad_producto";
-            this.txt_cantidad_producto.Size = new System.Drawing.Size(190, 22);
+            this.txt_cantidad_producto.Size = new System.Drawing.Size(190, 34);
             this.txt_cantidad_producto.TabIndex = 10;
             // 
             // btn_agregar_producto

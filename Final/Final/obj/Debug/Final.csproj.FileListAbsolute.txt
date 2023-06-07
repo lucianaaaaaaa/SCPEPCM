@@ -88,3 +88,4 @@ C:\Users\jfsor\Dropbox\PC\Documents\SCPEPCM\Final\Final\obj\Debug\Final.csproj.C
 C:\Users\jfsor\Dropbox\PC\Documents\SCPEPCM\Final\Final\obj\Debug\Final.csproj.CopyComplete
 C:\Users\jfsor\Dropbox\PC\Documents\SCPEPCM\Final\Final\obj\Debug\Final.exe
 C:\Users\jfsor\Dropbox\PC\Documents\SCPEPCM\Final\Final\obj\Debug\Final.pdb
+E:\Documents\UCB\SIs 1\Proyecto final\SCPEPCM\Final\Final\obj\Debug\Final.Datos_modificar_producto.resources

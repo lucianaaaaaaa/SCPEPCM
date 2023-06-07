@@ -16,7 +16,7 @@ namespace Final
     public partial class pantalla_empleado : Form
     {
         List<string> listaProductos = new List<string>();
-        int costoTotal = 0;
+        double costoTotal = 0;
 
         IFirebaseConfig config = new FirebaseConfig
         {
@@ -105,7 +105,7 @@ namespace Final
                             CostoTotal = (producto.Costo * Int32.Parse(txt_cantidad.Text)).ToString()
                         });
                         FirebaseResponse resp = await client.UpdateAsync("Productos/" + (reserva.Productos + 1000).ToString(), producto);
-                        costoTotal += (producto.Costo * Int32.Parse(txt_cantidad.Text));
+                        costoTotal += Convert.ToDouble(producto.Costo * Int32.Parse(txt_cantidad.Text));
                         MessageBox.Show("El producto " + cmb_productos.Text + " se agregó a la canasta", "Compra más",
                 MessageBoxButtons.OK, MessageBoxIcon.Information);
                         txt_cantidad.Text = "";

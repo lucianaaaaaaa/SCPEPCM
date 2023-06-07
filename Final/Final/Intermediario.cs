@@ -14,6 +14,6 @@ namespace Final
         public static string nombreCliente;
         public static string nitCliente;
         public static List <Canasta> canastas = new List <Canasta>();
-        public static int costoTotal;
+        public static double costoTotal;
     }
 }

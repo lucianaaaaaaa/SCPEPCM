@@ -117,5 +117,25 @@ namespace Final
             txt_nombres.Text = "";
             txt_nombre_usuario.Text = "";
         }
+
+        private void mostrarContra(object sender, EventArgs e)
+        {
+            txt_contraseña.UseSystemPasswordChar = false;
+        }
+
+        private void ocultarContra(object sender, EventArgs e)
+        {
+            txt_contraseña.UseSystemPasswordChar = true;
+        }
+
+        private void mostrarContra2(object sender, EventArgs e)
+        {
+            txt_confirmar_contraseña.UseSystemPasswordChar = false;
+        }
+
+        private void ocultarContra2(object sender, EventArgs e)
+        {
+            txt_confirmar_contraseña.UseSystemPasswordChar = true;
+        }
     }
 }

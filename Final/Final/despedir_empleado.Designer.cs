@@ -77,6 +77,8 @@
             this.txt_nombre_aplicacion.Name = "txt_nombre_aplicacion";
             this.txt_nombre_aplicacion.Size = new System.Drawing.Size(222, 34);
             this.txt_nombre_aplicacion.TabIndex = 8;
+            this.txt_nombre_aplicacion.MouseLeave += new System.EventHandler(this.ocultarContra);
+            this.txt_nombre_aplicacion.MouseHover += new System.EventHandler(this.mostrarContra);
             // 
             // btn_eliminar_empleado
             // 

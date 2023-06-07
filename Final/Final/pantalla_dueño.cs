@@ -56,5 +56,12 @@ namespace Final
 
             }
         }
+
+        private void btn_modificar_Click(object sender, EventArgs e)
+        {
+            Datos_modificar_producto datos_Modificar_Producto = new Datos_modificar_producto();
+            this.Hide();
+            datos_Modificar_Producto.Show();
+        }
     }
 }

@@ -76,5 +76,15 @@ namespace Final
                 txt_nombre_aplicacion.Text = "";
             }
         }
+
+        private void mostrarContra(object sender, EventArgs e)
+        {
+            txt_nombre_aplicacion.UseSystemPasswordChar = false;
+        }
+
+        private void ocultarContra(object sender, EventArgs e)
+        {
+            txt_nombre_aplicacion.UseSystemPasswordChar = true;
+        }
     }
 }

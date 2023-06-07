@@ -69,7 +69,13 @@ namespace Final
                     SetResponse respA = await client.SetAsync("Reserva/Productos", datalayerAlmacén);
                     Productos result = resp.ResultAs<Productos>();
                     Almacén resultA = resp.ResultAs<Almacén>();
+                MessageBox.Show("El producto se agregó correctamente", "", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                txt_cantidad_producto.Text = "";
+                txt_costo_producto.Text = "";
+                txt_nombre_producto.Text = "";
+                
             }
+
         }
 
         private void datos_agregar_producto_Load(object sender, EventArgs e)

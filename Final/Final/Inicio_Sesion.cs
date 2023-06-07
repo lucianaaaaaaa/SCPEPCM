@@ -124,6 +124,21 @@ namespace Final
             }
         }
 
+        private void txt_contraseña_TextChanged(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void mostrarContra(object sender, EventArgs e)
+        {
+            txt_contraseña.UseSystemPasswordChar = false;
+        }
+
+        private void ocultarContra(object sender, EventArgs e)
+        {
+            txt_contraseña.UseSystemPasswordChar = true;
+        }
+
         /*private async void button1_Click(object sender, EventArgs e)
         {
             var datalayerEmpleado = new Empleados

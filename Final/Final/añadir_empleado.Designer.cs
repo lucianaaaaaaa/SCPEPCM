@@ -146,59 +146,71 @@
             // 
             // txt_nombres
             // 
-            this.txt_nombres.Location = new System.Drawing.Point(352, 117);
+            this.txt_nombres.Font = new System.Drawing.Font("Mongolian Baiti", 13.8F);
+            this.txt_nombres.Location = new System.Drawing.Point(352, 114);
             this.txt_nombres.Name = "txt_nombres";
-            this.txt_nombres.Size = new System.Drawing.Size(446, 22);
+            this.txt_nombres.Size = new System.Drawing.Size(446, 34);
             this.txt_nombres.TabIndex = 11;
             // 
             // txt_fecha_nacimiento
             // 
-            this.txt_fecha_nacimiento.Location = new System.Drawing.Point(352, 163);
+            this.txt_fecha_nacimiento.Font = new System.Drawing.Font("Mongolian Baiti", 13.8F);
+            this.txt_fecha_nacimiento.Location = new System.Drawing.Point(352, 160);
             this.txt_fecha_nacimiento.Name = "txt_fecha_nacimiento";
-            this.txt_fecha_nacimiento.Size = new System.Drawing.Size(446, 22);
+            this.txt_fecha_nacimiento.Size = new System.Drawing.Size(446, 34);
             this.txt_fecha_nacimiento.TabIndex = 13;
             // 
             // txt_nacionalidad
             // 
-            this.txt_nacionalidad.Location = new System.Drawing.Point(352, 203);
+            this.txt_nacionalidad.Font = new System.Drawing.Font("Mongolian Baiti", 13.8F);
+            this.txt_nacionalidad.Location = new System.Drawing.Point(352, 200);
             this.txt_nacionalidad.Name = "txt_nacionalidad";
-            this.txt_nacionalidad.Size = new System.Drawing.Size(136, 22);
+            this.txt_nacionalidad.Size = new System.Drawing.Size(136, 34);
             this.txt_nacionalidad.TabIndex = 14;
             // 
             // txt_CI
             // 
-            this.txt_CI.Location = new System.Drawing.Point(545, 203);
+            this.txt_CI.Font = new System.Drawing.Font("Mongolian Baiti", 13.8F);
+            this.txt_CI.Location = new System.Drawing.Point(545, 200);
             this.txt_CI.Name = "txt_CI";
-            this.txt_CI.Size = new System.Drawing.Size(136, 22);
+            this.txt_CI.Size = new System.Drawing.Size(136, 34);
             this.txt_CI.TabIndex = 15;
             // 
             // txt_fecha_ingreso
             // 
+            this.txt_fecha_ingreso.Font = new System.Drawing.Font("Mongolian Baiti", 13.8F);
             this.txt_fecha_ingreso.Location = new System.Drawing.Point(352, 256);
             this.txt_fecha_ingreso.Name = "txt_fecha_ingreso";
-            this.txt_fecha_ingreso.Size = new System.Drawing.Size(136, 22);
+            this.txt_fecha_ingreso.Size = new System.Drawing.Size(136, 34);
             this.txt_fecha_ingreso.TabIndex = 16;
             // 
             // txt_nombre_usuario
             // 
+            this.txt_nombre_usuario.Font = new System.Drawing.Font("Mongolian Baiti", 13.8F);
             this.txt_nombre_usuario.Location = new System.Drawing.Point(352, 336);
             this.txt_nombre_usuario.Name = "txt_nombre_usuario";
-            this.txt_nombre_usuario.Size = new System.Drawing.Size(230, 22);
+            this.txt_nombre_usuario.Size = new System.Drawing.Size(230, 34);
             this.txt_nombre_usuario.TabIndex = 17;
             // 
             // txt_contraseña
             // 
+            this.txt_contraseña.Font = new System.Drawing.Font("Mongolian Baiti", 13.8F);
             this.txt_contraseña.Location = new System.Drawing.Point(352, 382);
             this.txt_contraseña.Name = "txt_contraseña";
-            this.txt_contraseña.Size = new System.Drawing.Size(230, 22);
+            this.txt_contraseña.Size = new System.Drawing.Size(230, 34);
             this.txt_contraseña.TabIndex = 18;
+            this.txt_contraseña.MouseLeave += new System.EventHandler(this.ocultarContra);
+            this.txt_contraseña.MouseHover += new System.EventHandler(this.mostrarContra);
             // 
             // txt_confirmar_contraseña
             // 
+            this.txt_confirmar_contraseña.Font = new System.Drawing.Font("Mongolian Baiti", 13.8F);
             this.txt_confirmar_contraseña.Location = new System.Drawing.Point(352, 430);
             this.txt_confirmar_contraseña.Name = "txt_confirmar_contraseña";
-            this.txt_confirmar_contraseña.Size = new System.Drawing.Size(230, 22);
+            this.txt_confirmar_contraseña.Size = new System.Drawing.Size(230, 34);
             this.txt_confirmar_contraseña.TabIndex = 19;
+            this.txt_confirmar_contraseña.MouseLeave += new System.EventHandler(this.ocultarContra2);
+            this.txt_confirmar_contraseña.MouseHover += new System.EventHandler(this.mostrarContra2);
             // 
             // btn_registrar
             // 

@@ -54,18 +54,24 @@
             // 
             // txt_usuario
             // 
-            this.txt_usuario.Location = new System.Drawing.Point(459, 198);
+            this.txt_usuario.Font = new System.Drawing.Font("Mongolian Baiti", 13.8F);
+            this.txt_usuario.Location = new System.Drawing.Point(437, 192);
             this.txt_usuario.Name = "txt_usuario";
-            this.txt_usuario.Size = new System.Drawing.Size(116, 22);
+            this.txt_usuario.Size = new System.Drawing.Size(185, 34);
             this.txt_usuario.TabIndex = 4;
             this.txt_usuario.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.SinCaracteresRaros);
             // 
             // txt_contraseña
             // 
-            this.txt_contraseña.Location = new System.Drawing.Point(459, 288);
+            this.txt_contraseña.Font = new System.Drawing.Font("Mongolian Baiti", 13.8F);
+            this.txt_contraseña.Location = new System.Drawing.Point(437, 282);
             this.txt_contraseña.Name = "txt_contraseña";
-            this.txt_contraseña.Size = new System.Drawing.Size(116, 22);
+            this.txt_contraseña.Size = new System.Drawing.Size(185, 34);
             this.txt_contraseña.TabIndex = 5;
+            this.txt_contraseña.UseSystemPasswordChar = true;
+            this.txt_contraseña.TextChanged += new System.EventHandler(this.txt_contraseña_TextChanged);
+            this.txt_contraseña.MouseLeave += new System.EventHandler(this.ocultarContra);
+            this.txt_contraseña.MouseHover += new System.EventHandler(this.mostrarContra);
             // 
             // label1
             // 
@@ -106,9 +112,9 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(279, 25);
+            this.pictureBox1.Location = new System.Drawing.Point(227, 25);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(326, 447);
+            this.pictureBox1.Size = new System.Drawing.Size(431, 447);
             this.pictureBox1.TabIndex = 9;
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
