@@ -13,5 +13,7 @@ namespace Final
         public static bool soyElDueño = false;
         public static string nombreCliente;
         public static string nitCliente;
+        public static List <Canasta> canastas = new List <Canasta>();
+        public static int costoTotal;
     }
 }

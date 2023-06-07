@@ -16,6 +16,7 @@ namespace Final
     public partial class pantalla_empleado : Form
     {
         List<string> listaProductos = new List<string>();
+        int costoTotal = 0;
 
         IFirebaseConfig config = new FirebaseConfig
         {
@@ -36,8 +37,11 @@ namespace Final
 
         private void btn_generar_comprobante_Click(object sender, EventArgs e)
         {
+            Intermediario.costoTotal = costoTotal;
             this.Hide();
-            generar_comprobante generar_Comprobante = new generar_comprobante();    
+            generar_comprobante generar_Comprobante = new generar_comprobante();
+            
+            //MessageBox.Show(Intermediario.costoTotal.ToString());
             generar_Comprobante.Show();
         }
 
@@ -77,6 +81,8 @@ namespace Final
             listaProductos.Clear();
             FirebaseResponse responseAlmacén = await client.GetAsync("Reserva/Productos");
             Almacén reserva = responseAlmacén.ResultAs<Almacén>();
+            Intermediario.nombreCliente = txt_nombre_cliente.Text;
+            Intermediario.nitCliente = txt_nit_cliente.Text;
 
             for (int i = 0; i < reserva.Productos; i++)
             {
@@ -91,16 +97,31 @@ namespace Final
                     else
                     {
                         producto.Reserva = producto.Reserva - Int32.Parse(txt_cantidad.Text);
-                        SetResponse resp = await client.SetAsync("Productos/" + (reserva.Productos + 1000).ToString(), producto);
+                        Intermediario.canastas.Add(new Canasta
+                        {
+                            Producto = producto.Nombre,
+                            Cantidad = txt_cantidad.Text,
+                            CostoUnitario = producto.Costo.ToString(),
+                            CostoTotal = (producto.Costo * Int32.Parse(txt_cantidad.Text)).ToString()
+                        });
+                        FirebaseResponse resp = await client.UpdateAsync("Productos/" + (reserva.Productos + 1000).ToString(), producto);
+                        costoTotal += (producto.Costo * Int32.Parse(txt_cantidad.Text));
+                        MessageBox.Show("El producto " + cmb_productos.Text + " se agregó a la canasta", "Compra más",
+                MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        txt_cantidad.Text = "";
+                        cmb_productos.SelectedIndex = -1;
+
                     }
                     break;
                 }
             }
+            
         }
 
         private void pantalla_empleado_Load(object sender, EventArgs e)
         {
             client = new FireSharp.FirebaseClient(config);
+            Intermediario.canastas.Clear();
             cmb_productos_preparacion();
         }
     }
